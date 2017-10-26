@@ -28,3 +28,4 @@ final TelephonyManager tm = (TelephonyManager) getBaseContext().getSystemService
     androidId = "" + android.provider.Settings.Secure.getString(getContentResolver(), android.provider.Settings.Secure.ANDROID_ID);
     UUID deviceUuid = new UUID(androidId.hashCode(), ((long)tmDevice.hashCode() << 32) | tmSerial.hashCode());
     String deviceId = deviceUuid.toString();
+,
